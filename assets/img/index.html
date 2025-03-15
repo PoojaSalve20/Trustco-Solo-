@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Trustco Landing Page</title>
+</head>
+<body>
+ <!-- Header Section -->
+ <header class="header">
+  <div class="logo">
+      <img src="./img/Logo.png" alt="Trustco Logo" />
+      <span>Trustco</span>
+  </div>
+  <nav class="nav" id="navMenu">
+      <a href="#">Features</a>
+      <a href="#">Solutions</a>
+      <a href="#">Company</a>
+      <a href="#">Resources</a>
+      <a href="#">Contact</a>
+
+      <!-- Auth buttons added inside nav for mobile view -->
+      <div class="auth-buttons-mobile">
+          <button class="login-btn">Login</button>
+          <button class="signup-btn">Sign up</button>
+      </div>
+  </nav>
+  <div class="auth-buttons">
+      <button class="login-btn">Login</button>
+      <button class="signup-btn">Sign up</button>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+</header>
+
+<!-- Hero Section -->
+<div class="container-fluid">
+    <section class="hero">
+        <!-- Left Side Hero Image -->
+        <div class="left-icons">
+          <img src="./img/Hero 5.png" alt="Left Hero" class="icon" />
+        </div>
+        
+        <div class="hero-content">
+          <h1>
+            Find a High-Potential  <br />Customers
+            with <span>Trustco</span>
+          </h1>
+          <p>
+            We provide sales teams and professionals with the knowledge, skill and<br />
+            discipline they need to be 10x more successful.
+          </p>
+          <div class="cta-buttons">
+            <a href="#get-started" class="btn primary-btn">Get Started</a>
+            <a href="#watch-video" class="btn secondary-btn">
+              <span>&#9654;</span> Check Our Video
+            </a>
+          </div>
+        </div>
+      
+        <!-- Right Side Hero Image -->
+        <div class="right-icons">
+          <img src="./img/Hero 6.png" alt="Right Hero" class="icon" />
+        </div>
+      </section>
+      <!-- Trusted By Section -->
+      <section class="trusted-by">
+        <div class="container">
+          <div class="trusted-by-content">
+            <p class="title">Trusted by the best in the world</p>
+            <div class="logos">
+              <p>Google</p>
+              <p>Atlassian</p>
+              <p>Canon</p>
+              <p>Walmart</p>
+              <p>Amazon</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      
+  
+  <!-- Hero Section -->
+  <section class="playSec">
+    <div class="row">
+      <div class="playSec-content">
+        <h1>High-Level Sales<br><span>Teams & Professionals</span></h1>
+        <p>Circuit is flexible and affordable and offers you exceptional support to achieve your career goals. Circuit is a Global training provider based across the UK that specialises.</p>
+      </div>
+    </div>
+   
+    
+    <div class="playSec-image">
+      <div class="video-wrapper">
+        <img src="./img/BG.png" alt="Team" />
+        <div class="play-btn">
+          &#9658;
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- card section-->
+  <div class="container card-container">
+    <div class="left-section">
+      <span class="badge">Beneficial</span>
+      <h1>Beneficial <br>Elements</h1>
+      <p>An awesome & powerful<br/> tools for your business,<br/> increase business revenue</p>
+    </div>
+  
+    <div class="right-section">
+      <div class="card">
+        <img src="./img/Illust 1.png" alt="Happy Customers" />
+        <h3>Happy Customers</h3>
+        <p>Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.</p>
+      </div>
+      <div class="card">
+        <img src="./img/Illust 2.png" alt="Best Integrations" />
+        <h3>Best Integrations</h3>
+        <p>Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.</p>
+      </div>
+      <div class="card">
+        <img src="./img/Illust 3.png" alt="Grow Without Problems" />
+        <h3>Grow Without Problems</h3>
+        <p>With evaluating in-depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stat-item">
+      <h2>$65 M</h2>
+      <span>Generate sales</span>
+    </div>
+    <div class="stat-item">
+      <h2>58%</h2>
+      <span>Grew revenue</span>
+    </div>
+    <div class="stat-item">
+      <h2>12</h2>
+      <span>Countries</span>
+    </div>
+    <div class="stat-item">
+      <h2>16k+</h2>
+      <span>Grew customers</span>
+    </div>
+  </div>
+</section>
+
+
+</div>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

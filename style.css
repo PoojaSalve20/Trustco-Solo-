@@ -1,0 +1,93 @@
+body {
+    font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  
+  p, a, span {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+     /* Header Section */
+     .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f8f9fa;
+      position: relative;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .logo img {
+      width: 40px; /* Adjust size as needed */
+      height: auto;
+    }
+    
+    .logo span {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+    
+    
+    /* Navigation */
+    .nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color: #000;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    
+    .nav a:hover {
+      color: #0f46a6;
+    }
+    
+    /* Auth Buttons */
+    .auth-buttons button {
+      padding: 0.5rem 1.5rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    
+    .login-btn {
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+    
+    .signup-btn {
+      background-color: #0f46a6;
+      color: #fff;
+    }
+    
+    /* Hamburger Icon */
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }

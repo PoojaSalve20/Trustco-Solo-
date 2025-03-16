@@ -544,3 +544,23 @@ letter-spacing: -2%;
   text-align: center;
   color: #404040;
   }
+  @media (max-width: 768px) {
+    .stats-section .container {
+      justify-content: center;
+    }
+  
+    .stat-item {
+      flex: 0 0 calc(50% - 20px); /* Two items per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .stat-item {
+      flex: 0 0 calc(50% - 20px);
+    }
+  }
+  @media (min-width: 769px) {
+    .auth-buttons-mobile {
+      display: none;
+    }
+  }

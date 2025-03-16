@@ -375,7 +375,29 @@ letter-spacing: -2%;
   }
   /* Responsive Design */
   @media (max-width: 768px) {
-   
+    .hamburger {
+      display: block;
+    }
+  
+    nav {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  
+    nav.active {
+      display: flex;
+    }
+  
+    .auth-buttons {
+      display: none;
+    }
   
     .hero-content h1 {
       font-size: 28px;

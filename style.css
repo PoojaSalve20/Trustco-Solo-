@@ -672,3 +672,177 @@ letter-spacing: -2%;
 .highlight{
   color: #92A7B0;
 }
+.containerr {
+  width: 81%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.headerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerr h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.headerr .see-all {
+  font-size: 16px;
+  color: #1d3557;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Slider Section */
+.slider {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.slide {
+  min-width: calc(50% - 10px); /* Show 2 slides in desktop view */
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
+}
+.testimonial-card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.quote {
+  font-size: 32px;
+  color: #ffba08;
+}
+
+.quote p { 
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Author Section */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.title {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #1d3557;
+}
+/* === Responsive Styles === */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-card {
+    padding: 16px;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .author img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name, .title {
+    font-size: 12px;
+  }
+
+  .slider {
+    gap: 10px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .testimonial-card {
+    padding: 12px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .author img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .name, .title {
+    font-size: 10px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+@media (max-width: 768px) {
+  .slide {
+    min-width: 100%; /* Show 1 slide in mobile view */
+  }
+}

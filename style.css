@@ -1,28 +1,97 @@
 body {
-    font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
+  font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  p, a, span {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+p, a, span {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-    
-    .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-     
-    /* Hero Section */
+  
+   /* Header Section */
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #0f46a6;
+  }
+  
+  /* Auth Buttons */
+  .auth-buttons button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .signup-btn {
+    background-color: #0f46a6;
+    color: #fff;
+  }
+  
+  /* Hamburger Icon */
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+/* Hero Section */
 .hero {
     display: flex;
     justify-content: center;
@@ -281,7 +350,7 @@ letter-spacing: -2%;
   }
   
   /* ✅ Responsive Design */
-    @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .playSec {
       flex-direction: column;
       text-align: center;
@@ -412,82 +481,85 @@ letter-spacing: -2%;
     }
   }
   
-  .card-container {
-    display: flex;
-    gap: 20px;
-    padding: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .left-section {
-    flex: 1;
-    min-width: 280px;
-  }
-  
-  .badge {
-    background-color: #0f4c81;
-    color: #fff;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 14px;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  .left-section h1 {
-    font-family: Lato;
-font-weight: 700;
-font-size: 60px;
-line-height: 72px;
-letter-spacing: -2%;
 
-  }
-  
-  
-  .left-section p {
-    font-family: Lato;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 0%;
-    color: #12141D;    
-  }
-  
-  /* Right Section */
-  .right-section {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    flex: 2;
-  }
-  
-  .card {
-    background-color: #f1f5f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 200px;
-    max-width: calc(33.33% - 14px); /* To make three cards in one row */
-  }
-  
-  .card img {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
-  }
-  
-  .card h3 {
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 8px;
-  }
-  
-  .card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.5;
-  }
+    .card-container {
+      display: flex;
+      gap: 20px;
+      padding: 50px;
+      flex-wrap: wrap;
+    }
+    
+    .left-section {
+      flex: 1;
+      min-width: 280px;
+    }
+    
+    .badge {
+      background-color: #0f4c81;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    .left-section h1 {
+      font-family: Lato;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -2%;
+
+    }
+    
+    
+    .left-section p {
+      font-family: Lato;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0%;
+      color: #12141D;    
+    }
+    
+    /* Right Section */
+    .right-section {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      flex: 2;
+    }
+    
+    .card {
+      background-color: #f1f5f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 200px;
+      max-width: calc(33.33% - 14px); /* To make three cards in one row */
+    }
+    
+    .card img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 10px;
+    }
+    
+    .card h3 {
+      font-size: 18px;
+      color: #000;
+      margin-bottom: 8px;
+    }
+    
+    .card p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+    
+  /* Responsive Styling */
   @media (max-width: 992px) {
     .right-section {
       flex-direction: row;
@@ -507,24 +579,25 @@ letter-spacing: -2%;
       max-width: 100%; /* Single card in one row on mobile */
     }
   }
+  /* Stats Section */
   .stats-section {
     text-align: center;
     padding: 50px 50px;
     background-color: #fff;
   }
-  
+
   .stats-section .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
+
   .stat-item {
     flex: 1;
     min-width: 150px;
     margin: 10px;
   }
-  
+
   .stat-item h2 {
     font-family: Lato;
     font-weight: 700;
@@ -534,7 +607,7 @@ letter-spacing: -2%;
     text-align: center;
     color: #043A53;  
   }
-  
+
   .stat-item span {
     font-family: Lato;
   font-weight: 700;
@@ -544,23 +617,55 @@ letter-spacing: -2%;
   text-align: center;
   color: #404040;
   }
-  @media (max-width: 768px) {
-    .stats-section .container {
-      justify-content: center;
-    }
-  
-    .stat-item {
-      flex: 0 0 calc(50% - 20px); /* Two items per row */
-    }
+@media (max-width: 768px) {
+  .stats-section .container {
+    justify-content: center;
   }
-  
-  @media (max-width: 480px) {
-    .stat-item {
-      flex: 0 0 calc(50% - 20px);
-    }
+
+  .stat-item {
+    flex: 0 0 calc(50% - 20px); /* Two items per row */
   }
-  @media (min-width: 769px) {
-    .auth-buttons-mobile {
-      display: none;
-    }
+}
+
+@media (max-width: 480px) {
+  .stat-item {
+    flex: 0 0 calc(50% - 20px);
   }
+}
+@media (min-width: 769px) {
+  .auth-buttons-mobile {
+    display: none;
+  }
+}   
+  .founder-section, .bridge-section, .testimonial-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    background: white;
+}
+.founder-content, .bridge-content, .testimonial-content {
+    flex: 1;
+    max-width: 500px;
+}
+.founder-image, .bridge-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.founder-image img, .bridge-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.btn {
+    background-color: #002d62;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}

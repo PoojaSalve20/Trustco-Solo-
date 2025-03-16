@@ -488,4 +488,22 @@ letter-spacing: -2%;
     color: #555;
     line-height: 1.5;
   }
+  @media (max-width: 992px) {
+    .right-section {
+      flex-direction: row;
+    }
   
+    .card {
+      max-width: calc(50% - 14px); /* 2 cards in one row on tablet */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      max-width: 100%; /* Single card in one row on mobile */
+    }
+  }

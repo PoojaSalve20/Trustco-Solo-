@@ -663,9 +663,12 @@ letter-spacing: -2%;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
 }
 .btn:hover {
     background-color: #0056b3;
+}
+.highlight{
+  color: #92A7B0;
 }

@@ -677,6 +677,28 @@ letter-spacing: -2%;
   max-width: 1100px;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .founder-section,.bridge-section {
+    flex-direction: column; /* Stack vertically */
+    padding: 30px 5%; /* Reduce padding for smaller screens */
+    text-align: center;
+  }
+
+  .founder-content,.bridge-content,.bridge-image .founder-image {
+    max-width: 100%; /* Allow full width */
+  }
+
+  .founder-image,.bridge-image {
+    order: -1; /* Move image above content */
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    margin-top: 16px;
+    width: 100%; /* Full width button */
+  }
+}
+
 
 /* Header Section */
 .headerr {

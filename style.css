@@ -940,3 +940,76 @@ letter-spacing: -2%;
 }
 .prev { left: 10px; }
 .next { right: 10px; }
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 20px;
+  width: 100%;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.cta {
+  background-color: #FFC107;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: black;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  position: relative;
+}
+
+.main-image {
+  width: 509px;
+}
+
+.badge {
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.badge1 {
+  background-color: #004C80;
+  bottom: 20px;
+  left: 20px;
+}
+
+.badge2 {
+  background-color: #FFC107;
+  top: 30px;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .content h1 {
+      font-size: 2rem;
+  }
+
+  .image-container {
+      margin-top: 20px;
+  }
+}

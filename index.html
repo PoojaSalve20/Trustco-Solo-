@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <title>Trustco Landing Page</title>
 </head>
@@ -11,7 +11,7 @@
  <!-- Header Section -->
  <header class="header">
   <div class="logo">
-      <img src="./img/Logo.png" alt="Trustco Logo" />
+      <img src="./assets/img/Logo.png" alt="Trustco Logo" />
       <span>Trustco</span>
   </div>
   <nav class="nav" id="navMenu">
@@ -38,7 +38,7 @@
     <section class="hero">
         <!-- Left Side Hero Image -->
         <div class="left-icons">
-          <img src="./assets/ 5.png" alt="Left Hero" class="icon" />
+          <img src="./assets/img/Hero 5.png" alt="Left Hero" class="icon" />
         </div>
         
         <div class="hero-content">
@@ -60,7 +60,7 @@
       
         <!-- Right Side Hero Image -->
         <div class="right-icons">
-          <img src="./assets/img/ 6.png" alt="Right Hero" class="icon" />
+          <img src="./assets/img/Hero 6.png" alt="Right Hero" class="icon" />
         </div>
       </section>
        <!-- Trusted By Section -->
@@ -107,17 +107,17 @@
   
     <div class="right-section">
       <div class="card">
-        <img src="./img/Illust 1.png" alt="Happy Customers" />
+        <img src="./assets/img/Illust 1.png" alt="Happy Customers" />
         <h3>Happy Customers</h3>
         <p>Productive agents are happy agents. Give them all the support tools and information they need to best serve your customers.</p>
       </div>
       <div class="card">
-        <img src="./img/Illust 2.png" alt="Best Integrations" />
+        <img src="./assets/img/Illust 2.png" alt="Best Integrations" />
         <h3>Best Integrations</h3>
         <p>Our software is powerful enough to handle the most complex business, yet flexible enough to scale with you as you grow.</p>
       </div>
       <div class="card">
-        <img src="./img/Illust 3.png" alt="Grow Without Problems" />
+        <img src="./assets/img/Illust 3.png" alt="Grow Without Problems" />
         <h3>Grow Without Problems</h3>
         <p>With evaluating in-depth variety of data sets and including the speed of tech adaptation we can build bridges between any companies and their customers.</p>
       </div>
@@ -144,7 +144,27 @@
     </div>
   </div>
 </section>
-    </div>
+<section class="founder-section">
+  <div class="founder-content">
+      <h1>Meet Our Founder</h1>
+      <p class="quote">“I think you're better off finding the money to hire someone than actually find a co-founder. The main reason? You probably won’t find someone as passionate as you are about the organization you're building.”</p>
+      <p class="founder-name">Jason Hound</p>
+      <p class="founder-title">Founder of Trustco.</p>
+      <button class="btn">See Team Behind Our Success →</button>
+  </div>
+  <div class="founder-image">
+      <img src="./assets/img/Profile.png" alt="Founder">
+  </div>
+</section>
 
+ 
+    </div>
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('navMenu');
+        nav.classList.toggle('active');
+      }
+    </script>
 </body>
+
 </html>

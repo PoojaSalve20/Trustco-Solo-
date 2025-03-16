@@ -507,3 +507,40 @@ letter-spacing: -2%;
       max-width: 100%; /* Single card in one row on mobile */
     }
   }
+  .stats-section {
+    text-align: center;
+    padding: 50px 50px;
+    background-color: #fff;
+  }
+  
+  .stats-section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .stat-item {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px;
+  }
+  
+  .stat-item h2 {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 72px;
+    letter-spacing: -2%;
+    text-align: center;
+    color: #043A53;  
+  }
+  
+  .stat-item span {
+    font-family: Lato;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #404040;
+  }

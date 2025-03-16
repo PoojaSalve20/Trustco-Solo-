@@ -166,13 +166,102 @@
       <button class="btn">View Reports →</button>
   </div>
 </section>
- 
+<section class="testimonials">
+  <div class="containerr">
+    <div class="headerr">
+      <h2>We Believe people we trust</h2>
+      <a href="#" class="see-all">See All →</a>
+    </div>
+    <div class="slider">
+      <div class="slide">
+        <div class="testimonial-card">
+          <span class="quote">❝</span>
+          <p>
+            I'm totally unconvinced that two people can find a person they haven't known previously, and become an effective co-founder.
+          </p>
+          <div class="author">
+            <img src="./assets/img/Photo.png" alt="Andrew Wilkins" />
+            <div>
+              <span class="name">Andrew Wilkins</span>
+              <span class="title">Managing Director, Yess Company</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="testimonial-card">
+          <span class="quote">❝</span>
+          <p>
+            Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!
+          </p>
+          <div class="author">
+            <img src="./assets/img/Photo (1).png" alt="Daisy Phelps" />
+            <div>
+              <span class="name">Daisy Phelps</span>
+              <span class="title">Digital Marketing Director, Monatc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="testimonial-card">
+          <span class="quote">❝</span>
+          <p>
+            Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!
+          </p>
+          <div class="author">
+            <img src="./assets/img/Photo (1).png" alt="Daisy Phelps" />
+            <div>
+              <span class="name">Daisy Phelps</span>
+              <span class="title">Digital Marketing Director, Monatc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="testimonial-card">
+          <span class="quote">❝</span>
+          <p>
+            Easy to use, reasonably priced, and ensures I don’t drop the ball on following up with my leads!
+          </p>
+          <div class="author">
+            <img src="./assets/img/Photo (1).png" alt="Daisy Phelps" />
+            <div>
+              <span class="name">Daisy Phelps</span>
+              <span class="title">Digital Marketing Director, Monatc</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+</section>
+
     </div>
     <script>
       function toggleMenu() {
         const nav = document.getElementById('navMenu');
         nav.classList.toggle('active');
       }
+      function showSlide(index) {
+  const slideWidth = window.innerWidth > 768 ? 50 : 100;
+  slides.forEach((slide, i) => {
+    slide.style.transform = `translateX(${(i - index) * slideWidth}%)`;
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+
+  currentSlide = index;
+}
+
+window.addEventListener('resize', () => showSlide(currentSlide));
+
     </script>
 </body>
 

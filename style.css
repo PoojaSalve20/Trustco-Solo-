@@ -1187,3 +1187,86 @@ letter-spacing: -2%;
 .dflex{
 display: flex;
 }
+.collaborators-section {
+  background-color: #f4f6f8;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.colcontainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.developer-info {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.academy-link {
+  color: #6a0dad;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.academy-link:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 16px 0;
+}
+
+h3 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.collaborators {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.collaborators img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collaborators img:hover {
+  transform: scale(1.1);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 16px;
+  }
+
+  .collaborators img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .developer-info {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}

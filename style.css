@@ -412,7 +412,6 @@ letter-spacing: -2%;
     }
   }
   
-
   .card-container {
     display: flex;
     gap: 20px;
@@ -460,5 +459,33 @@ letter-spacing: -2%;
     gap: 20px;
     flex-wrap: wrap;
     flex: 2;
+  }
+  
+  .card {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(33.33% - 14px); /* To make three cards in one row */
+  }
+  
+  .card img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
   }
   

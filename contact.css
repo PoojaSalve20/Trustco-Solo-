@@ -571,6 +571,7 @@ color: #fff;
     .footer-top {
       grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
       gap: 30px;
+     
     }
   }
   
@@ -578,6 +579,7 @@ color: #fff;
     .footer-top {
       grid-template-columns: 1fr; /* 1 column on mobile */
       gap: 20px;
+      width: 100%;
     }
   
     .footer-bottom-container {
@@ -588,10 +590,17 @@ color: #fff;
   
     .footer-column {
       text-align: center;
+      width: 100%;
+    }
+  
+    .logo {
+      justify-content: center;
+      gap: 8px;
     }
   
     .social-icons {
       justify-content: center;
     }
+  
   }
   

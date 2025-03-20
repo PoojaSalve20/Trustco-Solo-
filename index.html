@@ -11,15 +11,17 @@
  <!-- Header Section -->
  <header class="header">
   <div class="logo">
-      <img src="./assets/img/Logo.png" alt="Trustco Logo" />
-      <span>Trustco</span>
-  </div>
+    <a href="index.html" style="text-decoration: none;">
+        <img src="./assets/img/Logo.png" alt="Trustco Logo" />
+        <span>Trustco.</span>
+    </a>
+</div>
   <nav class="nav" id="navMenu">
       <a href="#">Features</a>
       <a href="#">Solutions</a>
       <a href="#">Company</a>
       <a href="#">Resources</a>
-      <a href="#">Contact</a>
+      <a href="contact.html">Contact</a>
 
       <!-- Auth buttons added inside nav for mobile view -->
       <div class="auth-buttons-mobile">
@@ -44,7 +46,7 @@
         <div class="hero-content">
           <h1>
             Find a High-Potential  <br />Customers
-            with <span>Trustco</span>
+            with <span>Trustco.</span>
           </h1>
           <p>
             We provide sales teams and professionals with the knowledge, skill and<br />
@@ -57,7 +59,8 @@
             </a>
           </div>
         </div>
-      
+       <!--  Single Image for Mobile -->
+<div class="single-mobile-image"></div>
         <!-- Right Side Hero Image -->
         <div class="right-icons">
           <img src="./assets/img/Hero 6.png" alt="Right Hero" class="icon" />
@@ -67,32 +70,40 @@
        <section class="trusted-by">
         <div class="container">
           <div class="trusted-by-content">
-            <p class="title">Trusted by the best in the world</p>
-            <div class="logos">
-              <p>Google</p>
-              <p>Atlassian</p>
-              <p>Canon</p>
-              <p>Walmart</p>
-              <p>Amazon</p>
+            <div class="title-wrapper">
+              <p class="trusted-by-content-title">Trusted by the best in the world</p>
+              <div class="logos">
+                <!-- For Desktop View -->
+                <img src="./assets/img/Brandsfull.png" alt="Trusted Brands" class="desktop-brands" />
+                <!-- For Mobile View -->
+                <div class="mobile-brands">
+                  <img src="./assets/img/Brands.png" alt="Trusted Brands Part 1" />
+                  <img src="./assets/img/Brandsmb.png" alt="Trusted Brands Part 2" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        
       </section>
+      <!--play section-->
       <section class="playSec">
-        <div class="row">
-          <div class="playSec-content">
-            <h1>High-Level Sales<br><span>Teams & Professionals</span></h1>
-            <p>Circuit is flexible and affordable and offers you exceptional support to achieve your career goals. Circuit is a Global training provider based across the UK that specialises.</p>
+        <div class="playSec-container">
+          <div class="row playSec-content">
+            <div class="col-6">
+              <h1>High-Level Sales<br><span>Teams & Professionals</span></h1>
+            </div>
+            <div class="col-6">
+              <p>
+                Circuit is flexible and affordable and offers you exceptional support to achieve your career goals. Circuit is a Global training provider based across the UK that specialises.
+              </p>
+            </div>
           </div>
-        </div>
-       
-        
-        <div class="playSec-image">
-          <div class="video-wrapper">
-            <img src="./assets/img/BG.png" alt="Team" />
-            <div class="play-btn">
-              &#9658;
+      
+          <!-- Video Section -->
+          <div class="playSec-image">
+            <div class="video-wrapper">
+              <img src="./assets/img/BG.png" alt="Team" />
+              <div class="play-btn">&#9658;</div>
             </div>
           </div>
         </div>
@@ -150,7 +161,7 @@
       <p class="quotes">“I think you're better off finding the money to hire someone than actually find a co-founder. The main reason? You probably won’t find someone as passionate as you are about the organization you're building.”</p>
       <p class="founder-name">Jason Hound</p>
       <p class="founder-title">Founder of Trustco.</p>
-      <button class="btn">See Team Behind Our Success →</button>
+      <button class="btn view">See Team Behind Our Success →</button>
   </div>
   <div class="founder-image">
       <img src="./assets/img/Profile.png" alt="Founder">
@@ -163,10 +174,10 @@
   <div class="bridge-content">
       <h2>Building bridges between <span class="highlight">companies and customers</span></h2>
       <p>With evaluating in-depth variety of data sets and including the speed of tech adaptation, we can build bridges between any companies and their customers.</p>
-      <button class="btn">View Reports →</button>
+      <button class="btn view">View Reports →</button>
   </div>
 </section>
-<section class="testimonials">
+<section class="testimonials" style="background-color: #F2F5F6;">
   <div class="containerr">
     <div class="headerr">
       <h2>We Believe people we trust</h2>
@@ -374,11 +385,13 @@
     </div>
   </div>
     <script>
-      function toggleMenu() {
-        const nav = document.getElementById('navMenu');
-        nav.classList.toggle('active');
-      }
-      function showSlide(index) {
+       function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.classList.toggle('active');
+  }
+  let currentSlide = 0; // Declare it globally
+
+function showSlide(index) {
   const slideWidth = window.innerWidth > 768 ? 50 : 100;
   slides.forEach((slide, i) => {
     slide.style.transform = `translateX(${(i - index) * slideWidth}%)`;
@@ -392,6 +405,7 @@
 }
 
 window.addEventListener('resize', () => showSlide(currentSlide));
+
 
     </script>
 </body>
